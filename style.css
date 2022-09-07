@@ -1,0 +1,117 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+a {
+    color: #F2F2F2  ;
+    font-family: Lato,sans-serif;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: none;
+    text-decoration: none; }
+  
+  /* } @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  */
+  nav a {
+    background-color: #F2F2F2 ;
+    color: #131D26 ;
+    padding: .5rem;
+    text-decoration: none;
+  }
+  .logo {
+   height: 40px; 
+  }
+  nav a:hover{ 
+    color: #D98555 }
+  body {
+    background-color: #F2F2F2 ;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+  }
+  
+  @media all and (max-width: 480px) {
+    display: block;
+  }
+  nav a {
+    border: 1px ;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #D98555 ;
+    border-bottom-style: none;
+  }
+  footer a {
+    background-color: #131D26 ;
+    color: #F2F2F2;
+    padding: none;
+    font-size: .5rem;
+  }
+  footer a:hover{ 
+    color: #D98555;}
+  p {
+      font-family: Lato, Helvetica, sans-serif;
+      color: #131D26 ;
+      font-size: 1rem;
+      line-height: 1.5;
+  }
+  h1 {
+    background-color:#59331D   ;
+    color: #F2F2F2 ;
+    font-family: Poppins,sans-serif;
+    font-size: 3rem;
+    padding: 1rem;
+   }
+  h1 {
+    border: 1px ;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: #131D26 ;
+    text-align: center;
+  }
+   figcaption {color: #131D26 ;
+    font-family: Lato,sans-serif;
+    font-size: 90%; 
+  }
+   footer {color: #59331D  ;
+    font-family: Montserrat,sans-serif;
+    font-size: .8rem; }
+  b {color:#59331D;
+  text-decoration:bold;}
+  i {color:#59331D;
+  text-decoration:bold;}
+  u {color:#59331D;
+  text-decoration: underline;}
+  
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  button{  background-color: #D98555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Lato,sans-serif;
+  }
+  @media only screen and (min-width: 768px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .product-container {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 0.5rem;
+    }
+  }
+  
