@@ -1,3 +1,21 @@
+/* color palette:
+#082B59 bright blue
+#131D26 navy blue
+#59331D coffee
+#D98555 peach
+#F2F2F2 white
+Fonts:
+Headlines - Poppins Bold
+Text - Lato
+Navbar links should be correct to their respective pages.
+Social media links may go to the home page of each service.
+*/
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 body {
     background-color: #082B59;
@@ -13,7 +31,7 @@ body {
     font-size: 2rem;
     margin-bottom: 0;
   }
-  /* responsive images */
+  /* make images flexible */
   img {
     max-width: 100%;
   }
@@ -26,7 +44,7 @@ body {
   header {
     border-bottom: 10px solid #d98555;
   }
-
+  /* navbar styling */
   nav ul {
     padding: 0;
     margin: 0;
@@ -39,11 +57,11 @@ body {
     margin: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
   }
-
+  /* max width on the image in pixels */
   nav .logo img {
     max-width: 150px;
   }
-
+  /* flex basis on the image container, li */
   nav .logo {
     flex-basis: 100%;
     text-align: center;
@@ -56,20 +74,26 @@ body {
   nav a:hover {
     color: #d98555;
   }
-
+  /* establishes a white background */
   .main-bkgd {
-    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    background: #ffffff url(media/gulp-bottom-beans.jpg) repeat-x bottom;
     padding-bottom: 300px;
   }
-
+  /* sits inside of the white background, centered */
   .main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     display: grid;
+    grid-template-columns: 0.75fr auto;
+    border: 1px solid red;
+  }
+
+  .home-copy {
+    padding-right: 2rem;
   }
   article {
-    flex-basis: 73%;
+    flex-basis: 30%;
   }
   figure {
     margin: 3rem 0 0 0;
@@ -85,6 +109,7 @@ body {
     color: #f2f2f2;
     padding: 0.5rem;
   }
+
   .button {
     display: inline-block;
     background-color: #59331D;
@@ -95,10 +120,12 @@ body {
     text-decoration: none;
     border: 3px solid #59331d;
   }
+
   .button:hover {
     background-color: #f2f2f2;
     color: #59331d;
   }
+
   footer {
     color: #f2f2f2;
     text-align: center;
@@ -114,69 +141,81 @@ body {
   }
   footer a {
     color: #f2f2f2;
-    font-size: 1rem;
+    font-size: 2rem;
     display: block;
     margin: 0 1rem 3rem 1rem;
   }
 
 
-/* products */
+/* product page specific styles */
+img.rounded-corner {
+  border-radius: 10px;
+}
 
 .product-container {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 0.5rem;
 }
 
 .item-img {
+  /*border: 3px dashed orange;*/
+  border-radius: 10px;
   margin: auto;
 }
 
 .item-text {
-  text-align: center;
+  /*border: 2px double blue;*/
+  text-align: left;
   margin: auto;
-  background-color: #F2F2F2;
 }
-div {
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-/*about*/
-.center {
-    text-align: center;
-}
+
+/*about styles */
 .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
+  /*border: 5px dotted red;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 0.5fr auto;
+  justify-content: space-around;
+  grid-column-gap: 1rem;
 }
 
-.about-copy a {
+.about-p {
+    /*border:2px solid green;*/
+}
+
+.about-copy {
+    /*border:5px double pink;*/
+    grid-column: 1;
+}
+
+.about-p a {
   color: #D98555;
+  /*border: 2px solid blue;*/
 }
 
-.about-container a:hover {
+.about-p a:hover {
   text-decoration:none;
 }
-/*.about-fig img {
-    width: 250px;
-  }*/
-  .about-fig {
+
+.about-fig {
     text-align:center;
     max-width:250px;
-    margin:auto;
+    /*border: 2px dotted red;*/
   }
-
 
 @media only screen and (min-width: 768px) {
   .product-container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0.5rem;
+  }
+  .about-container {
+   /*grid-template-columns: 1fr;*/
+  }
+  nav {
+      flex-direction: column;
   }
 }
 
@@ -186,18 +225,3 @@ div {
     column-gap: 0.5rem;
   }
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-You have no unread notifications
