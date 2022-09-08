@@ -121,18 +121,13 @@ body {
 
 
 /* products */
-img.rounded-corner {
-  border-radius: 10px;
-}
 
 .product-container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 0.5rem;
 }
 
 .item-img {
-  border-radius: 10px;
   margin: auto;
 }
 
@@ -141,7 +136,12 @@ img.rounded-corner {
   margin: auto;
   background-color: #F2F2F2;
 }
-
+div {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
 /*about*/
 .center {
     text-align: center;
